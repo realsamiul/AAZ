@@ -10,9 +10,9 @@
     <link href="css/components.css" rel="stylesheet">
     <link href="css/style-new.css" rel="stylesheet">
     <style>
-        .timeline-section .row .flex-col h5 { opacity: 1; font-size: 0.8em; margin-bottom: 0.5em; }
-        .timeline-section .row .flex-col h4 { margin-bottom: 0.25em; }
         .btn-link.btn-left-top .btn-text-inner { font-weight: 800; }
+        /* Ensure columns align top */
+        .case-intro .row { align-items: flex-start; }
     </style>
 </head>
 
@@ -31,7 +31,7 @@
         </div>
     </div>
 
-    <main class="main" id="contact" data-barba="container" data-barba-namespace="contact">
+    <main class="main" id="work-single" data-barba="container" data-barba-namespace="work-single">
         <div class="btn btn-hamburger">
             <div class="btn-click magnetic" data-strength="50" data-strength-text="25">
                 <div class="btn-fill"></div>
@@ -56,7 +56,7 @@
         </div>
 
         <div class="main-wrap" data-scroll-container>
-            <header class="section default-header theme-dark" data-scroll-section>
+            <header class="section default-header case-header" data-scroll-section>
                <div class="nav-bar">
                     <div class="credits-top">
                         <div class="btn btn-link btn-left-top">
@@ -88,47 +88,54 @@
                </div>
             </section>
 
-            <section class="section timeline-section about-services" data-scroll-section>
-               <div class="container">
+            <!-- Row 1: Early Career -->
+            <section class="section case-intro" data-scroll-section>
+               <div class="container medium">
                   <div class="row">
-                     <!-- Fixed: Inline styles added to force layout integrity -->
-                     <div class="flex-col" style="width: 33.33%; padding-left: calc(var(--container-padding) / 1.5);">
+                     <div class="flex-col">
                         <h5>1982 – 2003</h5>
                         <div class="stripe"></div>
-                        <h4>Grindlays &rarr; Standard Chartered</h4>
-                        <p>Head of Legal & Compliance, Gulf. Led the ANZ × SCB integration across five countries.</p>
+                        <li><p><strong>Grindlays &rarr; Standard Chartered</strong></p></li>
+                        <li><p>Head of Legal & Compliance, Gulf. Led the ANZ × SCB integration across five countries.</p></li>
                      </div>
-                     <div class="flex-col" style="width: 33.33%; padding-left: calc(var(--container-padding) / 1.5);">
+                     <div class="flex-col">
                         <h5>2003 – 2008</h5>
                         <div class="stripe"></div>
-                        <h4>CEO, IDLC Finance</h4>
-                        <p>Transformed a single-product leasing niche into Bangladesh’s first multi-product NBFI.</p>
+                        <li><p><strong>CEO, IDLC Finance</strong></p></li>
+                        <li><p>Transformed a single-product leasing niche into Bangladesh’s first multi-product NBFI.</p></li>
                      </div>
-                     <div class="flex-col" style="width: 33.33%; padding-left: calc(var(--container-padding) / 1.5);">
+                     <div class="flex-col">
                         <h5>2009 – 2019</h5>
                         <div class="stripe"></div>
-                        <h4>MD & CEO, Mutual Trust Bank</h4>
-                        <p>Assets tripled, branches quadrupled, digital core installed; non-performing loans held under three percent.</p>
+                        <li><p><strong>MD & CEO, Mutual Trust Bank</strong></p></li>
+                        <li><p>Assets tripled, branches quadrupled, digital core installed; non-performing loans held under three percent.</p></li>
                      </div>
                   </div>
-                  <div class="row" style="margin-top: 3em;">
-                     <div class="flex-col" style="width: 33.33%; padding-left: calc(var(--container-padding) / 1.5);">
+               </div>
+            </section>
+
+            <!-- Row 2: Recent & Boards -->
+            <section class="section case-intro" data-scroll-section style="padding-top: 0;">
+               <div class="container medium">
+                  <div class="row">
+                     <div class="flex-col">
                         <h5>2016 – 2019</h5>
                         <div class="stripe"></div>
-                        <h4>Chairman, Association of Bankers</h4>
-                        <p>Negotiated the national Basel-III transition and SWIFT security overhaul.</p>
+                        <li><p><strong>Chairman, Association of Bankers</strong></p></li>
+                        <li><p>Negotiated the national Basel-III transition and SWIFT security overhaul.</p></li>
                      </div>
-                     <div class="flex-col" style="width: 33.33%; padding-left: calc(var(--container-padding) / 1.5);">
+                     <div class="flex-col">
                         <h5>Boards & Directorships</h5>
                         <div class="stripe"></div>
-                        <h4>ACI, Summit, Berger +10</h4>
-                        <p>Serving on boards of major entities including ACI Limited, Summit Power, Berger Paints, and Trust Bank.</p>
+                        <li><p>ACI Limited · Summit Power</p></li>
+                        <li><p>Berger Paints · Trust Bank</p></li>
+                        <li><p>+10 more.</p></li>
                      </div>
-                     <div class="flex-col" style="width: 33.33%; padding-left: calc(var(--container-padding) / 1.5);">
+                     <div class="flex-col">
                         <h5>Academic</h5>
                         <div class="stripe"></div>
-                        <h4>Accreditations</h4>
-                        <p>Fellow, Institute of Bankers. Programs at Cambridge, INSEAD, Berkeley, LSE. Guest lecturer at Harvard and Yale.</p>
+                        <li><p>Fellow, Institute of Bankers.</p></li>
+                        <li><p>Programs at Cambridge, INSEAD, Berkeley, LSE.</p></li>
                      </div>
                   </div>
                </div>
@@ -147,7 +154,7 @@
             </section>
 
             <div class="footer-rounded-div" data-scroll-section><div class="rounded-div-wrap"><div class="rounded-div"></div></div></div>
-            <div class="footer-wrap footer-footer-wrap theme-dark" data-scroll-section>
+            <div class="footer-wrap footer-case-wrap theme-dark" data-scroll-section>
                 <footer class="section footer" data-scroll data-scroll-speed="-4" data-scroll-position="bottom">
                     <div class="container medium">
                         <div class="row"><div class="flex-col"><h2 style="font-size: 5vw;"><span>Collect what inspires you.</span></h2></div></div>
